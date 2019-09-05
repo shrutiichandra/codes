@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>
+		BOM DEMO
+	</title>
+</head>
+<body>
+	<h2>
+		<p id="p1"> This is p with id p1. </p>
+	</h2>
+
+	<script>
+		document.writeln("Current url-window.location.href "+window.location.href+"<br/>");
+		document.writeln("window.location.hostname: "+window.location.hostname+"<br/>");
+		document.writeln("window.location.pathname: "+window.location.pathname+"<br/>");
+		document.writeln("window.location.protocol: "+window.location.protocol+"<br/>");
+		document.writeln("window.location.port: "+window.location.port+"<br/>");
+		document.writeln("Browser: navigator.userAgent: "+navigator.userAgent+"<br/>");
+		document.writeln("OS: navigator.platform: "+navigator.platform+"<br/>");
+		document.writeln("Navigator app name: navigator.appName: "+navigator.appName+"<br/>");
+		document.writeln("Navigaator version: navigator.appVersion: "+navigator.appVersion+"<br/>");
+		document.writeln("Browser Code Name: navigator.appCodeName: "+navigator.appCodeName+"<br/>");
+		document.writeln("Screen colour depth: screen.colorDepth: "+screen.colorDepth+"<br/>");
+		document.writeln("Screen colour depth: screen.width: "+screen.width+"<br/>");
+		document.writeln("Screen colour depth: screen.height: "+screen.height+"<br/>");
+		document.writeln("Num of sites visited: "+window.history.length+"<br/>");
+
+
+		function goBack(){
+			window.history.back();
+		}
+
+		function goFrwd(){
+			window.history.forward();
+		}
+	//	goBack();
+	//goFrwd();
+	</script>
+	<p>
+		Go back and forward commented.
+	</p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>
+		Form Validation - regex
+	</title>
+</head>
+<body>
+	<fieldset>
+		<legend>
+			enter 3 digit numbers
+		</legend>
+		<form name="num">
+			<label>
+				Number:
+			</label>
+			<input type="number" name="id1">
+			<label id="message">
+				
+			</label>
+			<br>
+			<input type="button" value="Validate" onclick="validate()">
+		</form>
+	</fieldset>
+	
+	<script>
+		function validate(){
+			var pattern=/[1-9][0-9][0-9]/;
+			var string=document.num.id1.value
+			if(!pattern.test(string)){
+				document.getElementById("message").innerHTML="follow instructions carefully";
+			}
+			else{
+				document.getElementById("message").innerHTML="Yaya!";
+			}
+		}
+	</script>
+</body>
+</html>

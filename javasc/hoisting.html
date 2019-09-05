@@ -1,0 +1,37 @@
+<html>
+<head>
+	Hoisting
+</head>
+<body>
+	<script>
+		function abc(){
+			console.log("Initialization at last");
+			console.log(foo);
+			var foo=9;
+			
+		}
+		document.write("<h2> this does not work</h2>");
+		abc();
+		function cde(){
+			var foo;
+			console.log("Assignment at last");
+			console.log(foo);
+			foo=9;
+			
+		}
+		document.write("<h2> this does not work</h2>");
+		cde();
+		function def(){
+			foo=9;
+			console.log("Declaration at last");
+			console.log(foo);
+			var foo;
+			
+		}
+		document.write("<h2> this does work</h2>");
+		def();
+
+	</script>
+
+</body>
+</html>

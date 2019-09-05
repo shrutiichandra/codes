@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>
+		Scoping-Let
+	</title>
+</head>
+<body>
+	Check o/p in console.
+	<script>
+	
+		function foo(a,b){
+			console.log(a);
+			var temp=a;
+			if(a>b){
+				console.log("inside if");
+				temp=a;
+				a=b;
+				b=temp;
+			}
+			console.log(a);
+			console.log(temp); //undefined
+			console.log(temp===a);
+			return [a,b];
+		}
+		foo(25,10);
+
+		function bar(a,b){
+			if(a>b){
+				let temp=a;
+				a=b;
+				b=temp;
+			}
+			console.log(temp==a);
+			return [a,b];
+		}
+		bar(5,10);
+
+	</script>
+
+</body>
+</html>

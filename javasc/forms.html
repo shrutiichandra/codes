@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>
+		Forms
+	</title>
+</head>
+<body>
+	<form name="Add">
+		<label>
+			Number 1:
+		</label>
+		<input type=text name="num1" size=5>
+		<label>
+			Number 2:
+		</label>
+		<input type=text name="num2" size=5>
+		<input type=button name="add" value="Add" onclick="addition()">
+		<input type=button name="add" value="Sub" onclick="sub()">
+		<input type=button name="add" value="Mul" onclick="mul()">
+		<input type=button name="add" value="Divide" onclick="div()">
+		<input type=text name="ans" size=5>
+	</form>
+
+	<script>
+		var a=parseFloat(document.Add.num1.value);
+		var b=parseFloat(document.Add.num2.value);
+		function addition(){
+			res=a+b;
+			document.Add.ans.value=res;
+		}
+		function sub(){
+			res=a-b;
+			document.Add.ans.value=res;
+		}
+		function mul(){
+			res=a*b;
+			document.Add.ans.value=res;
+		}
+		function div(){
+			res=a/b;
+			document.Add.ans.value=res;
+		}
+	</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>
+		JS RegExp
+	</title>
+</head>
+	<script>
+		var pattern=/[a-z][A-Z][1-9]/;
+		var string="aS9 bA a0 N9 assA9";
+		document.write("pattern: "+pattern+"<br>");
+		document.write("string: "+string+"<br>");
+		document.write("pattern.test(string): "+pattern.test(string)+"<br>");
+		document.write("pattern.exec(string): "+pattern.exec(string)+"<br>");
+		document.write("string.match(pattern): "+string.match(pattern)+"<br>");
+		document.write("string.replace(pattern,mm): "+string.replace(pattern,"mm")+"<br>");
+		document.write("string.search(/s/): index- "+string.search(/s/)+"<br>")
+
+
+	</script>
+</html>

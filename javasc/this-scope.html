@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>
+		Scoping
+	</title>
+</head>
+<body>
+	Check o/p in console
+	<script>
+	function foo(){console.log(this)} foo();
+	var obj={method1:foo};
+	obj.method1();
+	new foo();
+
+	var hello=function(){console.log("hello"+this)}
+	hello.call(new Date());
+	hello();
+	hello.call("javasc");
+	hello.call(["a","b"]);
+	</script>
+
+</body>
+</html>

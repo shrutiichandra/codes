@@ -1,0 +1,26 @@
+<!--work in chrome-->
+<html>
+<head>
+	<title>
+		Asynchronous calls
+	</title>
+
+
+	<script type="text/javascript">
+		var async=function(){
+			var x=5;
+			setTimeout(function(){
+				x=x*5;
+				document.write("In async call back x*5: "+x+"<br>");
+				},60);
+			x=x+10;
+			document.write("After calling async function and then adding 10: "+x+"<br>");
+		};
+	</script>
+</head>
+<body>
+	<button onclick="async();">
+		Send Async Request
+	</button>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>
+		Scoping-Chain
+	</title>
+</head>
+<body>
+	<script>
+		//uncomment vars to get diff o/p.
+		var a=4;
+		function foo(){
+			var b=6;
+			//var a=10;
+			function bar(){
+				var c=3;
+			//	var b=5;
+				alert(a+b+c);
+			}
+			bar();
+		}
+		foo();
+	</script>
+
+</body>
+</html>

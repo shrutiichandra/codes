@@ -1,0 +1,125 @@
+Count Max Points on a Line
+https://medium.com/@harycane/max-points-on-a-line-1e38f51d591f
+Given N point on a 2D plane as pair of (x, y) co-ordinates, we need to find maximum number of point which lie on the same line.
+for all points, find slope between each pair
+if the points are vertical (i.e slope is inf) add them separately
+if the points are same, add them separately
+otherwise calculate the slope
+use a map to store the count of points with slope
+find max among all
+use gcd to bring the slope numerator and denominator to their simplest form, else double precision problem
+
+Algorithm to transform one word to another through valid words
+Design an algorithm which transforms a source word to a target word. for example: from head to tail, in each step, you just can replace one character, and the word must be valid. You'll be given a dictionary.
+- https://stackoverflow.com/questions/2205540/algorithm-to-transform-one-word-to-another-through-valid-words
+- consider words as nodes
+- two nodes are connected if they differ by one char only
+- find the two nodes to join- and check if path exists
+
+Find the first k numbers that have only 3,5,7 as their prime factors.
+make an array of size k
+use three vars to keep track- i3, i5, i7 
+initialize to 0
+the first element is kept as 1
+keep following vars nextNo, next_multiple_3, next_multiple_5, next_multiple_7
+- initialize next_multiple_3, next_multiple_5 and next_multiple_7 as 3,5,7 respectively
+for i 1 to k, do this
+	- nextNo is min of next_multiple_3, next_multiple_5, next_multiple_7
+	assign arr[i] as nextNo
+	check if this nextNo is multiple of 3 , 5 or 7
+	if yes, increment that var (i3, i5 , i7)
+	also, multiply next_multiple_x with arr[i_x]*x where x is 3,5 or 7
+
+Write a O(n) solution for finding the longest palindromic substring.
+- Manacher's Algo (to do)
+
+finding the longest palindromic substring
+Expand around center
+https://leetcode.com/problems/longest-palindromic-substring/solution/
+a palindrome mirrors around its center. Therefore, a palindrome can be expanded from its center, and there are only 2n−1 such centers.
+the center of a palindrome can be in between two letters. Such palindromes have even number of letters (such as "abba") and its center are between the two 'b's.
+
+
+check if a singly linked list is palindrome
+Use a stack:
+Push all nodes in a stack from head to tail
+compare nodes again, if value matches pop
+if all nodes match, return true else false
+
+
+Given a doubly linked list and head and tail pointers. Each node contains an integer value. Find if the list is a palindrome. Eg (1)->(23)->(1)->(321) => Yes
+construct a string from all the nodes , ignore '-' sign
+check if it is a palindrome
+similar: https://www.geeksforgeeks.org/check-linked-list-strings-form-palindrome/
+
+
+
+Serialize and deserialize n-ary tree without using any extra space
+Serialization is to store tree in a file so that it can be later restored. The structure of tree must be maintained. Deserialization is reading tree back from file.
+serialize params: root, file returns: void
+if root is null, return
+else, store the current key in file
+iterate from i = 0 to N, and do this
+check if root->child[i] exists
+	if yes, recur for that child
+store marker at the end of children
+deserialize params: root, file returns: bool
+read the next item from the file
+if no items are present or marker is read, return false
+else, create a new node with this value
+loop for i = 0 to N
+	recur for ith child of root
+	if it returns false, break from loop
+return true for successful finish
+
+
+Serialize a binary tree
+eg:
+Let the marker for NULL pointers be '-1'
+Input:
+     12
+    /
+  13
+Output: 12 13 -1 -1 -1
+
+Input:
+      20
+    /   \
+   8     22 
+Output: 20 8 -1 -1 22 -1 -1
+params: root, file
+returns: void
+if the root is null, write the marker in file and return
+else, write the root value in file
+recur for left sub tree
+recur for right sub tree
+
+Deserialize a binary tree
+params: root pointer, file pointer
+returns: void
+read the next item from the file
+if no items are present or marker is read, return
+else, create a new node with this value
+recur for left child 
+recur for right child
+
+
+Find the largest BST in any given binary tree
+(doubt)
+
+Print all nodes at a distance of k from the present node in the binary tree
+https://stackoverflow.com/questions/38190103/print-all-nodes-at-distance-k-from-a-given-node
+There are two types of nodes to be considered.
+Nodes in the subtree rooted with target node. 
+Other nodes, may be an ancestor of target, or a node in some other subtree. 
+
+Finding the first type of nodes is easy to implement. Just traverse subtrees rooted with the target node and decrement k in recursive call. When the k becomes 0, print the node currently being traversed 
+
+To find nodes of second type: we must go through all ancestors. For every ancestor, we find its distance from target node, let the distance be d, now we go to other subtree (if target was found in left subtree, then we go to right subtree and vice versa) of the ancestor and find all nodes at k-d distance from the ancestor.
+
+nth node from end linked list
+Maintain two pointers – reference pointer and main pointer. 
+Initialize both reference and main pointers to head. 
+First, move reference pointer to n nodes from head. 
+Now move both pointers one by one until the reference pointer reaches the end. 
+Now the main pointer will point to nth node from the end. Return the main pointer.

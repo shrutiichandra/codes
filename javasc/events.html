@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>
+		Events
+	</title>
+</head>
+<body>
+	<a href="" onMouseOver="mouseOver()"> 
+		MouseOver event
+	</a>
+	<br>
+	<a href="" onClick="alert('Ouch! That hurts :P')" > 
+		Click Here
+	</a>
+	<form>
+		<input type="text" name="focus" value="case change" size="30" onblur="this.value=this.value.toUpperCase();">
+	</form>
+
+	<script>
+		function mouseOver(){
+			var x=document.getElementById("p1");
+			x.innerHTML="Hey! I change on Mouse Over";
+		}
+		function click(){
+			
+		}
+	</script>
+	<p id="p1"> </p>
+	<p id="p2"> </p>
+</body>
+</html>

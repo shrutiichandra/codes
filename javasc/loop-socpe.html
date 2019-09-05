@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>
+		Scoping-Loop
+	</title>
+</head>
+<body>
+	<script>
+		var i=5;
+		for(var i=0;i<10;i++){
+			document.write("Printing loop: "+i+"<br>");
+		}
+		document.write("value of i: "+i+"<br>") //10
+		var j=5;
+		for(let j=0;j<10;j++){
+			document.write("Printing loop: "+j+"<br>");
+		}
+		document.write("value of j: "+j+"<br>") //5
+
+	</script>
+
+</body>
+</html>

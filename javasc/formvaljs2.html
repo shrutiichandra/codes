@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>
+		Form Validation - JS
+	</title>
+</head>
+<body>
+	<fieldset>
+		<legend>
+			Form
+		</legend>
+		<form name="namecoun">
+			<label>
+				Name:
+			</label>
+			<input type="text" name="id1">
+			<label id="message">
+				
+			</label>
+			<br>
+			<label>
+				Country:		
+			</label>
+			<select name="country" class="required">
+				<option value="-1" selected="selected"> Select a country
+				</option>
+				<option value="1">
+					India
+				</option>
+				<option value="2">
+					Pakistan
+				</option>
+				<option value="3">
+					Bangladesh
+				</option>
+			</select>
+			<input type="button" value="Validate" onclick="validate()">
+		</form>
+		<p id="p1">
+			
+		</p>
+	</fieldset>
+
+	<script>
+		function validate(){
+				if(document.namecoun.id1.value==''&&document.namecoun.country.value!='-1'){
+					document.getElementById("message").innerHTML="Name not entered!";
+				}
+			
+				else if(document.namecoun.country.value=='-1'&&document.namecoun.id1.value!=''){
+					document.getElementById("message").innerHTML="Country not entered!";
+				}
+				else if(document.namecoun.id1.value==''&& document.namecoun.country.value=='-1'){
+					document.getElementById("message").innerHTML="Both fields are mandatory!";
+				}
+			}
+			else{
+				document.getElementById("message").innerHTML="Hooray!";
+			}
+		
+		
+	</script>
+</body>
+</html>

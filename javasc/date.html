@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>
+		Built in Types: Date
+	</title>
+</head>
+<body>
+	Check console for o/p.
+	<script>
+		var now=new Date();
+		console.log("Now date: "+now);
+		var bday=new Date("Sep 17 1996");
+		console.log("BDate: "+bday);
+		console.log("Now month: "+now.getMonth());
+		console.log("Now Seconds: "+now.getSeconds());
+		console.log("No.of ms since bdate: "+bday.getTime());
+		var secs=bday.getTime();
+		var num=1/(1000*60*60*24*365);
+		console.log("1 ms= "+num+" years");
+		console.log(bday.getTime()+" ms = "+num*bday.getTime()+" years.");
+		
+
+	</script>
+
+</body>
+</html>

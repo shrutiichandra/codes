@@ -1,0 +1,32 @@
+<!--work in chrome-->
+<html>
+<head>
+	<title>
+		AJAX calls
+	</title>
+
+
+	<script>
+		function openWebPage(){
+			var xhttp=new XMLHttpRequest();
+			var url="http://help.websiteos.com/websiteos/example_of_a_simple_html_page.htm";
+			xhttp.onreadystatechange=function(){
+				if(xhttp.readyState==4&&xhttp.status==200){
+						document.getElementById("para1").innerHTML=xhttp.responseText;
+				}
+			}
+			xhttp.open('GET',url,true);
+			xhttp.send();
+		}
+	</script>
+</head>
+<body>
+	<button onclick="openWebPage();">
+		Send AJAX Request
+	</button>
+	<div id="div1">
+		<p id="para1">
+		</p>
+	</div>
+</body>
+</html>

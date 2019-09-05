@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>
+		Arrays
+	</title>
+</head>
+<body>
+	Check console for o/p.
+	<script>
+		var arr1=[];
+		console.log("Empty array: "+arr1+" .");
+		var arr2=new Array(5);
+		console.log("Array2: "+arr2+" . Size 5.");
+		var arr=new Array(1,"Two",3.0,"Four");
+		console.log("Array3: "+arr+" . Initialization.");
+		console.log("Arr[2]: "+arr[2]); //not printing 3.0 why?
+		arr[2]=3.01;
+		console.log("Changing 3.0 to 3.01: "+arr[2]); //correct o/p. omits trailing zeros
+
+		arr[0]="ONE";
+		console.log("Arr[0]: "+arr[0]);
+	</script>
+
+</body>
+</html>

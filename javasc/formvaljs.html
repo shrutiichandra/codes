@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>
+		Form Validation - JS
+	</title>
+</head>
+<body>
+	<fieldset>
+		<legend>
+			Form
+		</legend>
+		<form name="namecoun">
+			<label>
+				Name:
+			</label>
+			<input type="text" name="id1">
+			<label id="message">
+				
+			</label>
+			<br>
+			<label>
+				Country:		
+			</label>
+			<select name="country" class="required">
+				<option value="-1" selected="selected"> Select a country
+				</option>
+				<option value="1">
+					India
+				</option>
+				<option value="2">
+					Pakistan
+				</option>
+				<option value="3">
+					Bangladesh
+				</option>
+			</select>
+			<input type="button" value="Validate" onclick="validate()">
+		</form>
+	</fieldset>
+	
+	<script>
+		function validate(){
+			if(document.namecoun.id1.value==''){
+				document.getElementById("message").innerHTML="Name not entered!";
+			}
+			else{
+				document.getElementById("message").innerHTML="Yaya!";
+			}
+		}
+	</script>
+</body>
+</html>
