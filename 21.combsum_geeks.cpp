@@ -1,5 +1,6 @@
 // C++ program to find all combinations that 
 // sum to a given value 
+// https://www.geeksforgeeks.org/combinational-sum/
 #include <bits/stdc++.h> 
 using namespace std; 
 void print(vector<int>& r){

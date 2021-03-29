@@ -1,3 +1,4 @@
+// https://www.rookieslab.com/posts/fast-power-algorithm-exponentiation-by-squaring-cpp-python-implementation
 long long fast_power(long long base, long long power) {
     long long result = 1;
     while(power > 0) {
