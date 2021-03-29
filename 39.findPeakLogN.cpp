@@ -1,5 +1,5 @@
 // g++ findPeakLogN.cpp -o findPeakLogN
-//O(logN)
+//O(logN) https://leetcode.com/problems/find-peak-element/
 #include <vector>
 #include <iostream>
 #include "common_utils.h"

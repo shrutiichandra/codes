@@ -1,3 +1,4 @@
+# // https://www.hackerearth.com/practice/notes/efficient-factorials-calculation/
 def calculate_factorial_prime_decompose(number):
 
     prime = [True]*(number + 1)

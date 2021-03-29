@@ -1,4 +1,5 @@
 //g++ countnsay.cpp -o countnsay
+// https://leetcode.com/problems/count-and-say/
 #include <string>
 #include <iostream>
 #include <algorithm>
