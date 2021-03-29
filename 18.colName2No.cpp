@@ -1,4 +1,5 @@
 //g++ colName2No.cpp -o colName2No
+// https://leetcode.com/problems/excel-sheet-column-number/
 #include <iostream>
 #include <algorithm>
 

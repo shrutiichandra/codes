@@ -1,4 +1,5 @@
-//g++ canComplete.cpp -o canComplete
+//g++ canComplete.cpp
+// https://leetcode.com/problems/gas-station/
 #include <vector>
 #include <iostream>
 #include <algorithm>

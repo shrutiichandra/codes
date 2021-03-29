@@ -1,6 +1,6 @@
 //In a binary search tree, add the value of all the nodes greater than the present 
 // node to the value of the present node
-//g++ -o addAllGreaterNodes addAllGreaterNodes.cpp 
+//g++ addAllGreaterNodes.cpp 
 //./addAllGreaterNodes
 #include<iostream> 
 using namespace std; 
