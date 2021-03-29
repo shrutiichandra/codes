@@ -34,4 +34,13 @@
 37. find in vector 
 38-39. https://leetcode.com/problems/find-peak-element/ 
 40. v v simple fork 
+41. https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/ 
+42-43. https://leetcode.com/problems/first-missing-positive/
+44. https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
+45. https://leetcode.com/problems/fraction-to-recurring-decimal/
+46. https://leetcode.com/problems/generate-parentheses/
+47. https://leetcode.com/problems/next-permutation/ partial
+48. adjacency matrix of graph
+49. https://leetcode.com/problems/gray-code/
+50. https://leetcode.com/problems/group-anagrams/
 ```

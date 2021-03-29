@@ -14,6 +14,7 @@ string convert(vector<int>& v){
 	}
 	return st.str();
 }
+// https://leetcode.com/problems/next-permutation/
 vector<int> nextPermutation(vector<int>& nums) {
 	// cout<<"--in nextPermutation--- ";
 	// for(auto i:nums){

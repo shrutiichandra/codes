@@ -1,4 +1,5 @@
 //g++ grayCode.cpp -o grayCode
+// https://leetcode.com/problems/gray-code/
 #include <vector>
 #include <iostream>
 
