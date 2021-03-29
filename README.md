@@ -4,7 +4,7 @@
 2. https://www.geeksforgeeks.org/add-greater-values-every-node-given-bst/
 3. BFS
 4. insertion and search in bst, max depth of bst, mirror of bst
-5. build tree from given preorder and inorder traversal
+5. https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
 6. https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 7. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 8. https://leetcode.com/problems/gas-station/
