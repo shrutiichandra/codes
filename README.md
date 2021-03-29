@@ -1,5 +1,5 @@
 # codes
-codes -aps, scripting
+```
 1. Add two letters in python. python add2num.py
 2. https://www.geeksforgeeks.org/add-greater-values-every-node-given-bst/
 3. BFS
@@ -31,6 +31,7 @@ codes -aps, scripting
 34. https://www.hackerearth.com/practice/notes/efficient-factorials-calculation/ python
 35. fast fibonacci
 36. fast power https://www.rookieslab.com/posts/fast-power-algorithm-exponentiation-by-squaring-cpp-python-implementation
-37. find in vector
-38-39. https://leetcode.com/problems/find-peak-element/
+37. find in vector 
+38-39. https://leetcode.com/problems/find-peak-element/ 
 40. v v simple fork 
+```
