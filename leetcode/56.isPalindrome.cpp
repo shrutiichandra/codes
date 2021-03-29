@@ -1,4 +1,5 @@
 //g++ isPalindrome.cpp -o isPalindrome
+// https://leetcode.com/problems/valid-palindrome/
 #include <iostream>
 using namespace std;
 bool isPalindrome(string s) {

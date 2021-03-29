@@ -1,3 +1,4 @@
+// https://www.geeksforgeeks.org/strongly-connected-components/
 //g++ -o kosa kosaraju.cpp 
 #include <iostream>
 #include <vector>

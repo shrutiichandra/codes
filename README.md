@@ -43,4 +43,23 @@
 48. adjacency matrix of graph
 49. https://leetcode.com/problems/gray-code/
 50. https://leetcode.com/problems/group-anagrams/
+51. hamiltonian graph check
+52. https://leetcode.com/problems/path-sum/
+53. https://www.geeksforgeeks.org/largest-rectangle-under-histogram/
+54. https://leetcode.com/problems/binary-tree-inorder-traversal/
+55. https://leetcode.com/problems/integer-to-roman/
+56. https://leetcode.com/problems/valid-palindrome/
+57. https://www.geeksforgeeks.org/strongly-connected-components/
+58. https://leetcode.com/problems/word-ladder/
+59. https://www.geeksforgeeks.org/largest-bst-binary-tree-set-2/
+60. https://leetcode.com/problems/largest-rectangle-in-histogram/
+61. https://leetcode.com/problems/largest-number/
+62. https://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/
+63. https://leetcode.com/problems/length-of-last-word/
+64. https://leetcode.com/problems/longest-substring-without-repeating-characters/
+65. cpp length vs size
+66. https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+67,69. https://leetcode.com/problems/binary-tree-level-order-traversal/
+68. https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
+70. https://leetcode.com/problems/linked-list-cycle-ii/
 ```
