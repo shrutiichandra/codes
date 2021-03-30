@@ -1,4 +1,5 @@
 //g++ longestCommonPrefix.cpp -o longestCommonPrefix
+// https://leetcode.com/problems/longest-common-prefix/
 #include <string>
 #include <vector>
 #include <algorithm>

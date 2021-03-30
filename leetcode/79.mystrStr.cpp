@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
-
+// https://leetcode.com/problems/implement-strstr/
 using namespace std;
 int strStr(string haystack, string needle) {
 	int index;

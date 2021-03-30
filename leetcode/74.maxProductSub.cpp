@@ -1,4 +1,5 @@
 // g++ maxProductSub.cpp -o maxProductSub, //modified kadane
+//https://leetcode.com/problems/maximum-product-subarray/
 #include <vector>
 #include <iostream>
 

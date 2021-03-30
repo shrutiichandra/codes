@@ -39,7 +39,7 @@
 44. https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
 45. https://leetcode.com/problems/fraction-to-recurring-decimal/
 46. https://leetcode.com/problems/generate-parentheses/
-47. https://leetcode.com/problems/next-permutation/ partial
+47,80. https://leetcode.com/problems/next-permutation/ partial
 48. adjacency matrix of graph
 49. https://leetcode.com/problems/gray-code/
 50. https://leetcode.com/problems/group-anagrams/
@@ -62,4 +62,16 @@
 67,69. https://leetcode.com/problems/binary-tree-level-order-traversal/
 68. https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
 70. https://leetcode.com/problems/linked-list-cycle-ii/
+71. https://leetcode.com/problems/longest-common-prefix/
+72. https://leetcode.com/problems/longest-valid-parentheses/
+73. https://leetcode.com/problems/maximal-rectangle/
+74. https://leetcode.com/problems/maximum-product-subarray/
+75. https://leetcode.com/problems/maximum-subarray/
+76. https://leetcode.com/problems/minimum-path-sum/
+77. https://leetcode.com/problems/triangle/
+78. https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+79. https://leetcode.com/problems/implement-strstr/
+81. https://leetcode.com/problems/decode-ways/
+82. https://leetcode.com/problems/palindrome-partitioning/
+83. https://leetcode.com/problems/pascals-triangle/
 ```
