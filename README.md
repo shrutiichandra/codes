@@ -74,4 +74,13 @@
 81. https://leetcode.com/problems/decode-ways/
 82. https://leetcode.com/problems/palindrome-partitioning/
 83. https://leetcode.com/problems/pascals-triangle/
+84. https://leetcode.com/problems/path-sum-ii/
+85. https://leetcode.com/problems/permutations/
+86. https://leetcode.com/problems/permutations-ii/
+87. https://leetcode.com/problems/binary-tree-postorder-traversal/
+88. https://leetcode.com/problems/regular-expression-matching/ uses library
+89. https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
+90. https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+91. https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+92. https://leetcode.com/problems/remove-element/
 ```

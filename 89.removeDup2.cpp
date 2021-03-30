@@ -1,4 +1,6 @@
 //g++ removeDup2.cpp -o removeDup2
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
+// slow, naive
 #include <vector>
 #include <algorithm>
 #include <iostream>
