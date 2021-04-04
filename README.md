@@ -83,4 +83,12 @@
 90. https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 91. https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 92. https://leetcode.com/problems/remove-element/
+93. https://leetcode.com/problems/restore-ip-addresses/
+94-95. https://leetcode.com/problems/reverse-words-in-a-string/
+96. https://leetcode.com/problems/roman-to-integer/
+97. https://leetcode.com/problems/rotate-image/
+98. https://leetcode.com/problems/rotate-list/
+99. https://leetcode.com/problems/search-a-2d-matrix/
+100. https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
+101. https://leetcode.com/problems/search-in-rotated-sorted-array/
 ```
