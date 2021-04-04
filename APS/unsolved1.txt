@@ -1,0 +1,881 @@
+Q1.  Minimum Number of swaps. 
+ Your task is simple .Given an array Ar of unique integrs , you need to find minimum number of swaps required to make array such that Ar[i] == i . In a single swap you can choose any two indices i , j (i != j ) and swap Ar[i] , Ar[j] .
+
+Input Format
+
+First line contains N i.e Number of intergers in an array second line contains N space separated integers
+
+Constraints
+
+1<= N <= 1000000
+
+0 <= Ar[i] < N
+
+Output Format
+
+Single integer denoting minimum number of swaps required.
+
+Sample Input 0
+
+5
+2 1 3 0 4 
+
+Sample Output 0
+
+2
+
+Explanation 0
+
+1) swap 3 and 0 , array becomes 2 1 0 3 4
+
+2) swap 2 and 0 , array becomes 0 1 2 3 4
+
+so minimum swaps required is 2
+
+Sample Input 1
+
+3
+1 2 0 
+
+Sample Output 1
+
+2
+
+________________________________________________________
+Q2.  Defuse the bomb 1 
+Ramesh and Suresh are terrorists. Both of them have some boxes (arranged in non-decreasing order).
+
+You got to know that Kth box after merging all the boxes is Bomb.
+
+Find the Bomb.
+
+NOTE--you can only use constant extra space other than the input.
+
+Do not use sort(). Expected time complexity is O(N).
+
+Input Format
+
+First line consists of T test cases.
+
+Next line of every test case consists of 2 integers N, M denoting number of boxes that Ramesh and Suresh have respectively.
+
+Next line will consist of N space-separated values of Ramesh's Boxes.
+
+Next line will consist of M space-separated values of Suresh's Boxes.
+
+Next line will have position of Bomb(k).
+
+Constraints
+
+1<=T<=200
+
+1<=N,M<=100000
+
+1<=K<=N+M
+
+Output Format
+
+Value of Bomb separated by new line.
+
+Sample Input 0
+
+1
+2 4
+10 12
+8 11 13 15
+5
+
+Sample Output 0
+
+13
+
+________________________________________________________
+Q3.
+Avinash loves mathematics , specially interesting numbers.Interesting numbers are positive integers whose decimal representation contains only the digits 4 and 7. For example, numbers 44, 74, 4 are interesting and 5, 17, 467 are not.Let next(x) be the minimum interesting number which is larger than or equals x. Avinash is interested what is the value of the expression next(l) + next(l + 1) + ... + next(r - 1) + next(r). Help him solve this problem.
+
+Input Format
+
+First line contains T i.e number of testcases.
+
+Each of T lines contains two space separated integers l and r
+
+Constraints
+
+1<= T <= 10000
+
+1<= l <= r <= 1000000000
+
+Output Format
+
+Corresponding to each test case print the required answer on new line.
+
+Sample Input 0
+
+2
+1 5
+1 4
+
+Sample Output 0
+
+23
+16
+
+Explanation 0
+
+In first test case next(1)=4 next(2)=4 next(3)=4 next(4)=4 next(5)=7 , so , 4+4+4+4+7=23
+
+________________________________________________________
+Q4. https://www.hackerrank.com/contests/aps-2018-lab-2/challenges/nth-fibonacci-2-1/problem
+
+________________________________________________________
+Q5. 
+Given N non-negative integers representing the histogram's bar height where the width of each bar is 1. Find the area of the largest rectangle in the histogram.
+
+Input Format
+
+Given a number N denoting the number of bars.
+
+The second line will contain N space-separated numbers denoting the height of all bars.
+
+Constraints
+
+1 <= N <= 10^7 1 <= height <= 10^7
+
+Output Format
+
+Print the area of the largest rectangle.
+
+Sample Input 0
+
+4
+10 20 8 12
+
+Sample Output 0
+
+32
+________________________________________________________
+Q6.
+There are N people standing in a row. There are M types of umbrellas to cover these people. Each ith type of umbrella covers exactly Ai number of people (a person can be under only 1 umbrella and number of umbrellas are infinite for each type).
+
+You need to find the number of ways you can cover these N people using these M types of umbrellas. (Different order of same umbrellas is considered to be a single way)
+
+Input Format
+
+First line contains 2 space separated integers N and M
+
+Second line contains M space separated integers denoting the number of people M types of umbrellas convers.
+
+Constraints
+
+1 <= N <= 1000 1 <= M <= 100 1 <= size of each type of umbrella <= 1000
+
+Output Format
+
+A single integers denoting the number of ways.
+
+Sample Input 0
+
+10 4
+2 5 3 6
+
+Sample Output 0
+
+5
+________________________________________________________
+Q7.
+Swati being a funny bone , has strange dna sequence. Her dna consist of series of nucleotides abbreviated as S, W, A, and G . for example "SSWGAGGSA" is one dna sequence.
+
+You being a researcher in MIT , is interested in finding all the 10 length repreated substring in given DNA sequence.
+
+Input Format
+
+Single string of chracters 'S' , 'W' , 'A' , 'G' denoting dna sequence.
+
+Constraints
+
+10 <= length of dna sequence <= 1000000
+
+Output Format
+
+all the repeated substring in Lexicographically ordered separated by space .
+
+NOTE:- Lexicographical order of strings ["AAC" , "AAB" , "AAA" ] is ["AAA" , "AAB" , "AAC" ]
+
+Sample Input 0
+
+AAAAAWWWWWAAAAAWWWWWWAAAAAGGGSSS
+
+Sample Output 0
+
+AAAAAWWWWW WWWWWAAAAA 
+
+________________________________________________________
+Q8.
+Gaurav loves pizza a lot , and he is studious as well . One day he and vineet went to pizza hut and found all the pizza arranged in a row on table numbered 1 to N . Each pizza have some predefined taste value.Gaurav asks vineet a question " what is the maximum value of j - i such that taste of i'th pizza is <= taste of j'th pizza " . Since Vinnet is your Senior and hates mathematics , he asks you to solve the question.
+
+Input Format
+
+first line contains T (No. of testcases)
+
+In each test case , first line contains N i.e No. of pizzas and second line contains N space separated integers.
+
+Constraints
+
+1 <= T <= 100
+
+1 <= N <= 100000
+
+Sum of N over all test cases does not exceed 2000000
+
+0 <= Taste[i] <= 100000000
+
+Output Format
+
+Answer on separate line corresponding to each Test Case.
+
+Sample Input 0
+
+3
+10
+11 16 20 10 10 14 14 19 15 19
+8
+14 17 14 12 17 10 14 13
+5
+13 12 18 16 16
+
+Sample Output 0
+
+9
+6
+4
+
+Explanation 0
+
+For first case largest diffrence is between 10'th index and 1'st index and 11 < 19 so answer is 10-1 = 9
+
+For second case largest diffrence is between 7'th index and 1'st index and 14 == 14 so answer is 7-1 = 6
+
+
+________________________________________________________
+Q9. 
+PG1 has equal number of boys and girls ( N each ) . MIT is mystical place . Tying rakhi to boy gurantees a very good placement :p , hence every girl decided to tie rakhi to one boy. Roll number of boys are even numbered ( 0 , 2 , 4...2N-2 ) and girls are odd ( 1 , 3 , 5 ...2N-1 ) . Girl with roll number X will tie rakhi to boy with roll number X-1 .
+
+On the day of rakshabandhan all the boys and girls assembeled on ground and stood in a row in random order ( Not adjacent to there partner ) . Your task is simple , you need to find minimum number of swaps required such that each girl is adjacent to her BHAIYA i.e girl numbered X is a adjacent to boy numbered X-1 .
+
+In a single swap you can choose any two boy/girl and swap there position.See sample for more clarity .
+
+Input Format
+
+first line contains T (No. of testcases)
+
+In each test case , first line contains N i.e No. boys and girls . Second line contains 2N unique space separated integers denoting roll numbers in random order .
+
+Constraints
+
+1 <= T <= 10
+
+1 <= N <= 100000
+
+0 <= Roll Number[i] <= 2N-1
+
+Output Format
+
+For each Test case output single line denoting minimum number of swaps.
+
+Sample Input 0
+
+2
+3
+1 3 5 4 0 2
+1
+1 0
+
+Sample Output 0
+
+1
+0
+
+Sample Input 1
+
+3
+5
+1 8 0 7 6 3 9 4 5 2
+2
+3 2 0 1
+5
+6 7 3 8 0 5 1 9 2 4
+
+Sample Output 1
+
+4
+0
+3
+
+Explanation 1
+
+FOR Third test case of sample 1
+
+first swap 3 and 9 resulting array is 6 7 9 8 0 5 1 3 2 4
+
+Second swap 0 and 4 resulting array is 6 7 9 8 4 5 1 3 2 0
+
+Third swap 0 and 3 resulting array is 6 7 9 8 4 5 1 0 2 3
+
+so answer is 3
+
+________________________________________________________
+Q10.
+You will be given a range L and R(inclusive). Find the summation of all prime numbers in this range.
+
+Input Format
+
+First line contains a single integer Q
+
+Next Q lines contains two integer L and R respectively.
+
+Constraints
+
+Q<=100
+
+1<=L,R<=1000000
+
+L < R
+
+Output Format
+
+A single integer denotes sum of prime numbers on every line.
+
+Sample Input 0
+
+2
+1 9
+4 13
+
+Sample Output 0
+
+17
+36
+
+Explanation 0
+
+2+3+5+7=17 5+7+11+13=36
+
+________________________________________________________
+Q11.
+Sameer Singh has a unique OCD for palindromes. Sameer get's happy if he is able to find all the palindromic subStrings from a String. Though he is a DMA TA he is weak in counting.Please help Sameer to count all such substrings and make him happy.
+
+Given a string, your task is to count how many palindromic substrings in this string.
+
+The substrings with different start indexes or end indexes are counted as different substrings even they consist of same characters.
+
+Input Format
+
+A single line containing a String.
+
+Constraints
+
+1<=n<=10000 where n is length of the string.
+
+Output Format
+
+A single line denoting number of palindromic substrings
+
+Sample Input 0
+
+abc
+
+Sample Output 0
+
+3
+
+Explanation 0
+
+Three palindromic strings: "a", "b", "c".
+
+Sample Input 1
+
+aaa
+
+Sample Output 1
+
+6
+
+Explanation 1
+
+Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa"
+
+________________________________________________________
+Q12.
+Shubham conducted a spelling test in class and most of the students didn't perform well. Looking at their answer sheets, Shubham realized that the spellings written by the students were not completely wrong but were at some distance from the original word. This meant that some INSERTION, REPLACEMENT or DELETION at character level was required to convert the wrong spelling to the right one. Since Shubham is very kind, he decided to cut the marks depending on the distance the wrong word was from the correct word. On every INSERTION, REPLACEMENT or DELETION Shubham would cut one mark. As Shubham trusts his students, write a code to find the minimum number of changes required.
+
+Help him find the minimum number of INSERTION, REPLACEMENT or DELETION required.
+
+Input Format
+
+The First line of the input contains an integer T denoting the number of test cases. Then T test cases follow. Each test case coantains two strings str1 and str2 in order.
+
+Constraints
+
+1<=T<=50 1<= Length(str1) <= 1000 1<= Length(str2) <= 1000
+
+Output Format
+
+Corresponding to each test case, pint in a new line, the minimum number of operations required.
+
+Sample Input 0
+
+3
+ashwn
+ashwin
+ashwen
+ashwin
+ashwini
+ashwin
+
+Sample Output 0
+
+1
+1
+1
+
+________________________________________________________
+Q13.
+Avani loves to play with numbers. So she defines a magic square to be 3*3 matrix of distinct positive integers from 1 to 9 where the sum of any row, column, or diagonal of length is always equal to the same number: the magic constant 15.
+
+You will be given a 3*3 matrix of integers in the inclusive range [1,9] . You can convert any digit a to any other digit b in the range[1,9] at cost of |a-b|. Given a square , convert it into a magic square at minimal cost. Print this cost on a new line.
+
+Note: The resulting magic square must contain distinct integers in the inclusive range [1,9].
+
+Input Format
+
+Each of the 3 lines contains three space-separated integers.
+
+Constraints
+
+Range: [1,9]
+
+Output Format
+
+Print an integer denoting the minimum cost of turning matrix into a magic square.
+
+Sample Input 0
+
+4 8 2
+4 5 7
+6 1 6
+
+Sample Output 0
+
+4
+
+Explanation 0
+
+Using 0-based indexing, if we make
+
+s[0][1]->9 at a cost of|9-8|=1
+s[1][0]->3 at a cost of|3-4|=1
+s[2][0]->8 at a cost of|8-6|=2
+
+then the total cost will be 1+1+2=4. 
+
+________________________________________________________
+Q14.
+Our Library wants to buy some books. They asked every student to give the id of book which they need. Librarian got 2 list , one given by student(in which all student have given the book id) and another is given by academic dept in priority.
+
+Librarian wants to order first those book which is given by academic dept and also at least one student in college wants and for remaining books, book with lowest id have higher priority .
+
+Arrange all the books given by students in priority.
+
+Input Format
+
+first line is number of Testcases T
+
+Each test case will consist of 3 lines.
+
+First line of each testcase will consist of 2 number(N and M),N= No. of students who wants book and M = No. of books suggested by academic dept.
+
+Second line of each test case consists of N space separated book id.
+
+Third line will consist of M space separated book id suggested by academic dept in order of priority.
+
+Constraints
+
+1 <= T <= 200
+
+1 <= N <= 20000
+
+1 <= M <= 20000
+
+1 <= bookid <= 100000000
+
+Output Format
+
+For each test case print space seaprated book id.
+
+Sample Input 0
+
+2
+10 4
+439259 873313 378321 735561 285112 816358 665806 677047 315003 326330
+315003 285112 816358 677047
+10 4
+904926 504215 78794 678368 299805 383074 962553 834201 684685 276451
+276451 834201 383074 678368
+
+Sample Output 0
+
+315003 285112 816358 677047 326330 378321 439259 665806 735561 873313 
+276451 834201 383074 678368 78794 299805 504215 684685 904926 962553 
+
+________________________________________________________
+Q15.
+You have an array A of N strings and Q queries. In each query you are provided with a string again. You need to print the number of strings which contains the query string as a prefix in array A.
+
+Input Format
+
+first line contains two integers N and Q respectively
+
+following N lines contains N strings represting array A
+
+followwing Q lines contains Q query strings.
+
+Constraints
+
+1 <= N, Q <= 10^5
+
+String lengths <= 30
+
+Output Format
+
+Q integers on newline contains the results of Q queries
+
+Sample Input 0
+
+5 3
+xkeilwef
+zxhkn
+vjavemcbsi
+bbnuvp
+rwqnie
+bbn
+qqb
+wce
+
+Sample Output 0
+
+1
+0
+0
+
+________________________________________________________
+Q16.
+Your task is simple.
+
+Given a tree with N nodes ( indexed from 0 ) .
+
+For each node you need to calculate sum of distance of all other nodes. Distance between any two node is number of edges in path of both nodes .
+
+Input Format
+
+First line contains N i.e number of Nodes in tree.
+
+Next N-1 lines contains 2 integers a , b denoting edge between node a and b .
+
+Constraints
+
+1 <= N ,a , b <= 100000
+
+Output Format
+
+Output N space separated integers in which i'th integer denotes sum of distnace of all other node from i'th node.
+
+Sample Input 0
+
+8
+0 2
+1 5
+1 6
+2 4
+2 5
+3 5
+4 7
+
+Sample Output 0
+
+18 16 12 18 16 12 22 22 
+
+________________________________________________________
+Q17.
+Your task is to write a program that can decide whether you can find an arithmetic expression consisting of five given numbers A_i (1 ≤ i ≤ 5) that will yield the Target value .
+
+You can perform only { addition , subtraction , multiplication } arithmetic operations on any two numbers .
+
+Any arithmetic expression is evaluated from left to right . Ex. ( ( ( (a[i] op1 a[j]) op2 a[k] ) op3 a[l] ) op4 a[m] )
+
+You can perform any operation multiple number of times but each given number should be used exactly once.
+
+Input Format
+
+First line represent T (Number of testcases)
+
+Each testcase contains 2 line , first line have 5 space separated integers A_i (1 ≤ i ≤ 5) , next line contains Target value.
+
+Constraints
+
+1 <= T <= 5000
+
+1 <= A_i <= 10000
+
+1 <= Target <= 10^5
+
+Output Format
+
+If it's possible to achive target value , print "Possible" , otherwise print "Impossible"
+
+Sample Input 0
+
+4
+1 2 3 4 5 
+29
+1 1 1 1 1 
+13
+4 5 9 8 7 
+17
+10 20 30 40 50 
+55
+
+Sample Output 0
+
+Possible
+Impossible
+Possible
+Impossible
+
+Explanation 0
+
+(i)  ((((1*2)+3)*5)+4) = 29
+
+(ii)  Not possible to make 13
+
+(iii) ((((4+5)+7)+9)-8) = 17
+
+(iv)  Not possible to make 55
+
+
+________________________________________________________
+Q18.
+Ashwin is a great philosopher and thinks that every problem in life can be solved by making a maze out of it. If he finds any path from the start (0,0) to the end in the maze (n,n) then he knows there is a way out of the problem. Whenever he is in a problem he makes a N*N Matrix out of it and randomly makes some cells 0 and others 1. He starts from the very first cell ie (0,0) and tries to reach the end by moving in any of the 4 directions ie 'U'(up), 'D'(down), 'L' (left), 'R' (right). The movement can be only done within cells that are marked one. Help him complete the function which returns a sorted array of strings denoting all the possible directions which the rat can take to reach the destination at (n-1, n-1).
+
+Input Format
+
+The first line of input contains an integer T denoting the no of test cases. Then T test cases follow. Each test case contains two lines. The first line contains an integer n denoting the size of the square matrix. The next line contains n*n space separated values of the matrix m where 0's represents blocked paths and 1 represent valid paths.
+
+Constraints
+
+    1<=T<=10
+    2<=n<=10
+    0<=m[][]<=1
+
+Output Format
+
+For each test case output will be space separated sorted strings denoting all directions, which the one could take to reach the destination.
+
+Sample Input 0
+
+2
+4
+1 0 0 0 1 1 0 1 0 1 0 0 0 1 1 1
+4
+1 0 0 0 1 1 0 1 1 1 0 0 0 1 1 1
+
+Sample Output 0
+
+DRDDRR
+DDRDRR DRDDRR
+
+________________________________________________________
+Q19.
+Shobhan has just received his GATE scholarship and is overjoyed! Now he wants to go for a trip all by himself to Laputa. His intention is to visit all the cities (exactly once) of that country. But since he doesn’t know how to swim he could go from one city to another only if there is a bridge between them (modes of communication are via a bridge or by swimming). A bridge connects two cities only if the last character of the name of the first city matches with the first character of that of second city. Since he has to leave early and is busy packing he wants you to figure out whether it is possible to stop by all the cities or not. He is allowed to start in any of the n cities.
+
+Input Format
+
+First line of input contains an integer T (number of test cases). Each test case starts with a line containing an integer n. Next n lines contains name of cities. Assume city names are in lowercase only.
+
+Constraints
+
+1 <= n <= 1000.
+1 <= T <= 20.
+Length of city names <=20
+
+Output Format
+
+For each test case, print 'Yes' if it is possible to visit all the cities else print 'No'.
+
+Sample Input 0
+
+1
+5
+abzx
+ptcs
+xrbp
+znka
+srzp
+
+Sample Output 0
+
+Yes
+
+Explanation 0
+
+There is a route through znka->abzx->xrbp->ptcs->srzp 
+
+________________________________________________________
+Q20.
+You are given a tree (a simple connected graph with no cycles).
+
+Find the maximum number of edges you can remove from the tree to get a forest such that each connected component of the forest contains an even number of nodes.https://www.hackerrank.com/contests/aps-2018-lab-9/challenges/even-tree
+
+
+________________________________________________________
+Q21.
+In a 2D grid of 0s and 1s, we change at most one 0 to a 1.
+
+After, what is the size of the largest village?
+
+A group of connected 1s forms a village.
+
+Input Format
+
+First line will have the values of M,N. Space separated. Next M lines will consist of N values {0,1}
+
+Constraints
+
+1 <= M,N <= 100
+
+Output Format
+
+Single integer denoting number of villages.
+
+Sample Input 0
+
+2 2
+10
+01
+
+Sample Output 0
+
+3
+
+Explanation 0
+
+Change one 0 to 1 and connect two 1s, then we get an island with area = 3.
+
+Sample Input 1
+
+2 2
+11
+01
+
+Sample Output 1
+
+4
+
+Explanation 1
+
+Change the 0 to 1 and make the island bigger, only one island with area = 4.
+
+Sample Input 2
+
+2 2
+11
+11
+
+Sample Output 2
+
+4
+
+Explanation 2
+
+Can't change any 0 to 1, only one island with area = 4.
+
+________________________________________________________
+Q22.
+Once Kenny and Seb were in mood to challenge each other in coding. So, Seb threw a challenge to find topological ordering of a given graph. Since there were no assignments recently Kenny had practiced this and was updated with graphs algos, so it was KIDs' stuff for him. Out of embarrassment Seb decided to give a hard question this time and turn the tables.
+
+Question is to find the next lexicographically greater topological ordering than the given order which is also valid with respect to DAG. 
+Input Format
+
+The first line contains two space-separated integers describing the respective values of n(the number of vectices) and m(the number of directed edges) in the DAG.
+
+Each of the m subsequent lines contains a pair of space-separated integers, u and v, describing a directed edge from vertex u(the first value) to vertex v(the second value).
+
+The last line contains a permuatation of n distinct space-separated positive integers x(where each integers is 1<=x<=n) denoting topological ordering p.
+
+Constraints
+
+1<=n<=100000
+
+1<=m<=2 * 100000
+
+0<=m<= n*(n-1)/2
+
+1<=u,v<=n
+
+Output Format
+
+Print n space-separated integers denoting the smallest topological ordering the is also lexicographically greater than p; if p is already the lexicographically largest topological ordering,print -1 instead.
+
+Sample Input 0
+
+5 5
+1 3
+2 3
+3 4
+2 5
+5 4
+1 2 5 3 4
+
+Sample Output 0
+
+2 1 3 5 4 
+
+________________________________________________________
+Q23.
+You are provided with N distinct integers from 1 to N. You need to find the number of permutations which satisfy these conditions :
+
+    Closeness from the given permutation must not exceed K.
+
+    Permutations should be lexicographically smaller than the given permuation.
+
+Closeness is defined as : for i = 1 to N summation of abs(Ai-Bi) must not exceed K, where Ai and Bi are ith integers of permutation A and B.
+
+Input Format
+
+First line contains an integer T
+
+Each test case consist of 2 lines, first of which contains two integers N and K
+
+Second line of each test case consists of the given permutation (N distinct integers ranging from 1 to N)
+
+Constraints
+
+1 <= T <= 5
+
+1 <= N <= 17
+
+1 <= K <= 20
+
+Output Format
+
+For each test case print the number of permuations satisfying the given conditions.
+
+Sample Input 0
+
+1
+5 2
+1 2 3 5 4
+
+Sample Output 0
+
+1
+
